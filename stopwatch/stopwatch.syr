@@ -1,0 +1,538 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> Reading design: stopwatch.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "stopwatch.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "stopwatch"
+Output Format                      : NGC
+Target Device                      : xc3s50a-5-tq144
+
+---- Source Options
+Top Module Name                    : stopwatch
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../hex_sseg/hex_sseg.v" in library work
+Compiling verilog file "../hex_BCD/hex_BCD.v" in library work
+Module <hex_sseg> compiled
+Compiling verilog file "../disp_mux/disp_mux.v" in library work
+Module <hex_BCD> compiled
+Compiling verilog file "stopwatch.v" in library work
+Module <disp_mux> compiled
+Module <stopwatch> compiled
+No errors in compilation
+Analysis of file <"stopwatch.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <stopwatch> in library <work> with parameters.
+	COUNTING = "010"
+	PAUSE = "100"
+	START = "000"
+	wait_before_count = "001"
+	wait_before_pause = "011"
+
+Analyzing hierarchy for module <hex_BCD> in library <work>.
+
+Analyzing hierarchy for module <disp_mux> in library <work> with parameters.
+	N = "00000000000000000000000000010001"
+	width = "0100"
+
+Analyzing hierarchy for module <hex_sseg> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <stopwatch>.
+	COUNTING = 3'b010
+	PAUSE = 3'b100
+	START = 3'b000
+	wait_before_count = 3'b001
+	wait_before_pause = 3'b011
+Module <stopwatch> is correct for synthesis.
+ 
+Analyzing module <hex_BCD> in library <work>.
+Module <hex_BCD> is correct for synthesis.
+ 
+Analyzing module <disp_mux> in library <work>.
+	N = 32'sb00000000000000000000000000010001
+	width = 4'b0100
+Module <disp_mux> is correct for synthesis.
+ 
+Analyzing module <hex_sseg> in library <work>.
+Module <hex_sseg> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <hex_BCD>.
+    Related source file is "../hex_BCD/hex_BCD.v".
+    Found 4-bit adder for signal <$add0000> created at line 35.
+    Found 4-bit adder for signal <$add0001> created at line 35.
+    Found 4-bit adder for signal <$add0002> created at line 35.
+    Found 4-bit adder for signal <$add0003> created at line 35.
+    Found 4-bit adder for signal <$add0004> created at line 38.
+    Found 4-bit adder for signal <$add0005> created at line 35.
+    Found 4-bit adder for signal <$add0006> created at line 38.
+    Found 4-bit adder for signal <$add0007> created at line 35.
+    Found 4-bit adder for signal <$add0008> created at line 38.
+    Found 4-bit adder for signal <$add0009> created at line 35.
+    Found 4-bit adder for signal <$add0010> created at line 38.
+    Found 4-bit adder for signal <$add0011> created at line 41.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0000> created at line 34.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0001> created at line 34.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0002> created at line 34.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0003> created at line 37.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0004> created at line 34.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0005> created at line 37.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0006> created at line 34.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0007> created at line 37.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0008> created at line 34.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0009> created at line 40.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0010> created at line 37.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0011> created at line 34.
+    Summary:
+	inferred  12 Adder/Subtractor(s).
+	inferred  12 Comparator(s).
+Unit <hex_BCD> synthesized.
+
+
+Synthesizing Unit <disp_mux>.
+    Related source file is "../disp_mux/disp_mux.v".
+    Found 4x3-bit ROM for signal <en>.
+    Found 4-bit 4-to-1 multiplexer for signal <sseg>.
+    Found 17-bit up counter for signal <cnt>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred   4 Multiplexer(s).
+Unit <disp_mux> synthesized.
+
+
+Synthesizing Unit <hex_sseg>.
+    Related source file is "../hex_sseg/hex_sseg.v".
+    Found 32x8-bit ROM for signal <seg>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <hex_sseg> synthesized.
+
+
+Synthesizing Unit <stopwatch>.
+    Related source file is "stopwatch.v".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 21-bit up counter for signal <cnt>.
+    Found 10-bit register for signal <hex>.
+    Found 10-bit adder for signal <hex$addsub0000> created at line 99.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <stopwatch> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 32x8-bit ROM                                          : 1
+ 4x3-bit ROM                                           : 1
+# Adders/Subtractors                                   : 13
+ 10-bit adder                                          : 1
+ 4-bit adder                                           : 12
+# Counters                                             : 2
+ 17-bit up counter                                     : 1
+ 21-bit up counter                                     : 1
+# Registers                                            : 1
+ 10-bit register                                       : 1
+# Comparators                                          : 12
+ 4-bit comparator greater                              : 12
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <state/FSM> on signal <state[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 2
+ 32x8-bit ROM                                          : 1
+ 4x3-bit ROM                                           : 1
+# Adders/Subtractors                                   : 13
+ 10-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 11
+# Counters                                             : 2
+ 17-bit up counter                                     : 1
+ 21-bit up counter                                     : 1
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+# Comparators                                          : 12
+ 4-bit comparator greater                              : 12
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <stopwatch> ...
+
+Optimizing unit <hex_BCD> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block stopwatch, actual ratio is 15.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 51
+ Flip-Flops                                            : 51
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : stopwatch.ngr
+Top Level Output File Name         : stopwatch
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 15
+
+Cell Usage :
+# BELS                             : 284
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 30
+#      LUT2                        : 32
+#      LUT2_D                      : 1
+#      LUT3                        : 32
+#      LUT4                        : 76
+#      LUT4_D                      : 1
+#      LUT4_L                      : 1
+#      MUXCY                       : 51
+#      MUXF5                       : 6
+#      VCC                         : 1
+#      XORCY                       : 48
+# FlipFlops/Latches                : 51
+#      FDC                         : 51
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 3
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50atq144-5 
+
+ Number of Slices:                       96  out of    704    13%  
+ Number of Slice Flip Flops:             51  out of   1408     3%  
+ Number of 4 input LUTs:                177  out of   1408    12%  
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    108    13%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 51    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst_inv(rst_inv1_INV_0:O)          | NONE(cnt_0)            | 51    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.613ns (Maximum Frequency: 178.169MHz)
+   Minimum input arrival time before clock: 5.530ns
+   Maximum output required time after clock: 24.462ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.613ns (frequency: 178.169MHz)
+  Total number of paths / destination ports: 1814 / 50
+-------------------------------------------------------------------------
+Delay:               5.613ns (Levels of Logic = 9)
+  Source:            cnt_4 (FF)
+  Destination:       hex_1 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cnt_4 to hex_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.495   0.488  cnt_4 (cnt_4)
+     LUT1:I0->O            1   0.561   0.000  cnt_cmp_eq0000_wg_cy<0>_rt (cnt_cmp_eq0000_wg_cy<0>_rt)
+     MUXCY:S->O            1   0.523   0.000  cnt_cmp_eq0000_wg_cy<0> (cnt_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  cnt_cmp_eq0000_wg_cy<1> (cnt_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  cnt_cmp_eq0000_wg_cy<2> (cnt_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  cnt_cmp_eq0000_wg_cy<3> (cnt_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  cnt_cmp_eq0000_wg_cy<4> (cnt_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O          23   0.179   1.088  cnt_cmp_eq0000_wg_cy<5> (cnt_cmp_eq0000)
+     LUT2_D:I1->O          9   0.562   0.699  hex_mux0000<0>270 (N2)
+     LUT4:I3->O            1   0.561   0.000  hex_mux0000<9>1 (hex_mux0000<9>)
+     FDC:D                     0.197          hex_0
+    ----------------------------------------
+    Total                      5.613ns (3.338ns logic, 2.275ns route)
+                                       (59.5% logic, 40.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 46 / 13
+-------------------------------------------------------------------------
+Offset:              5.530ns (Levels of Logic = 5)
+  Source:            start (PAD)
+  Destination:       hex_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: start to hex_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.824   0.677  start_IBUF (start_IBUF)
+     LUT4:I0->O            1   0.561   0.423  hex_mux0000<0>253 (hex_mux0000<0>253)
+     LUT4:I1->O            1   0.562   0.465  hex_mux0000<0>256 (hex_mux0000<0>256)
+     LUT2_D:I0->O          9   0.561   0.699  hex_mux0000<0>270 (N2)
+     LUT4:I3->O            1   0.561   0.000  hex_mux0000<9>1 (hex_mux0000<9>)
+     FDC:D                     0.197          hex_0
+    ----------------------------------------
+    Total                      5.530ns (3.266ns logic, 2.264ns route)
+                                       (59.1% logic, 40.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 302058 / 11
+-------------------------------------------------------------------------
+Offset:              24.462ns (Levels of Logic = 19)
+  Source:            hex_6 (FF)
+  Destination:       sseg<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: hex_6 to sseg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.495   0.795  hex_6 (hex_6)
+     LUT4:I3->O           10   0.561   0.858  h1/BCD_mux00041 (h1/BCD_mux0004)
+     LUT3:I0->O            7   0.561   0.710  h1/Madd__add0002_cy<1>11 (h1/Madd__add0002_cy<1>)
+     LUT3:I0->O            2   0.561   0.488  h1/BCD_cmp_gt00021 (h1/BCD_cmp_gt0002)
+     LUT3:I0->O            3   0.561   0.453  h1/Madd__add0003_cy<1>11 (h1/Madd__add0003_cy<1>)
+     LUT4:I3->O            2   0.561   0.382  h1/BCD_mux001611 (h1/N13)
+     LUT4:I3->O            4   0.561   0.607  h1/BCD_cmp_gt00041 (h1/BCD_cmp_gt0004)
+     LUT2:I0->O            2   0.561   0.488  h1/BCD_mux001821 (h1/N61)
+     LUT4:I0->O            9   0.561   0.699  h1/BCD_mux002411 (h1/N14)
+     LUT4:I3->O            5   0.561   0.646  h1/Madd__add0008_cy<1>11 (h1/Madd__add0008_cy<1>)
+     LUT3:I0->O            3   0.561   0.517  h1/BCD_cmp_gt00071 (h1/BCD_cmp_gt0007)
+     LUT3:I1->O            1   0.562   0.423  h1/Madd__add0010_cy<1>1_SW0 (N38)
+     LUT4:I1->O            3   0.562   0.453  h1/Madd__add0010_cy<1>1 (h1/Madd__add0010_cy<1>)
+     LUT4:I3->O            3   0.561   0.474  h1/BCD_mux003911 (h1/N17)
+     LUT4:I2->O            2   0.561   0.403  h1/BCD_mux004121 (h1/N10)
+     LUT4:I2->O            1   0.561   0.380  d1/Mmux_sseg9189_SW0 (N22)
+     LUT3:I2->O            1   0.561   0.000  d1/Mmux_sseg9200_G (N49)
+     MUXF5:I1->O           7   0.229   0.668  d1/Mmux_sseg9200 (BCD_out<2>)
+     LUT4:I1->O            1   0.562   0.357  sseg_decoder_1/Mrom_seg61 (sseg_decoder_1/Mrom_seg6)
+     OBUF:I->O                 4.396          sseg_6_OBUF (sseg<6>)
+    ----------------------------------------
+    Total                     24.462ns (14.660ns logic, 9.802ns route)
+                                       (59.9% logic, 40.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.43 secs
+ 
+--> 
+
+Total memory usage is 4530688 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

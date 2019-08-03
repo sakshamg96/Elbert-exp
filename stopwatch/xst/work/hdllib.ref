@@ -1,0 +1,4 @@
+MO hex_sseg NULL ../hex_sseg/hex_sseg.v vlg5E/hex__sseg.bin 1564849304
+MO hex_BCD NULL ../hex_BCD/hex_BCD.v vlg71/hex___b_c_d.bin 1564849304
+MO disp_mux NULL ../disp_mux/disp_mux.v vlg4D/disp__mux.bin 1564849304
+MO stopwatch NULL stopwatch.v vlg1D/stopwatch.bin 1564849304

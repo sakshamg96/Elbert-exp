@@ -1,0 +1,4 @@
+verilog work "../hex_sseg/hex_sseg.v"
+verilog work "../hex_BCD/hex_BCD.v"
+verilog work "../disp_mux/disp_mux.v"
+verilog work "stopwatch.v"
