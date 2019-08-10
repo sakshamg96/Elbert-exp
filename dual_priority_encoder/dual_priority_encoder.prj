@@ -1,0 +1,6 @@
+verilog work "../decoder_2to4/decoder_2to4.v"
+verilog work "../priority_encoder_12_4/priority_encode_12_4.v"
+verilog work "../hex_sseg/hex_sseg.v"
+verilog work "../disp_mux/disp_mux.v"
+verilog work "../decoder_4bit/deoder_4bit.v"
+verilog work "dual_priority_encoder.v"

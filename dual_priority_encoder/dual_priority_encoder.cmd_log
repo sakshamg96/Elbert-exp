@@ -1,0 +1,53 @@
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.syr" 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "dual_priority_encoder.ngc" dual_priority_encoder.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o dual_priority_encoder_map.ncd dual_priority_encoder.ngd dual_priority_encoder.pcf 
+par -w -intstyle ise -ol high -t 1 dual_priority_encoder_map.ncd dual_priority_encoder.ncd dual_priority_encoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml dual_priority_encoder.twx dual_priority_encoder.ncd -o dual_priority_encoder.twr dual_priority_encoder.pcf 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "dual_priority_encoder.ngc" dual_priority_encoder.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o dual_priority_encoder_map.ncd dual_priority_encoder.ngd dual_priority_encoder.pcf 
+par -w -intstyle ise -ol high -t 1 dual_priority_encoder_map.ncd dual_priority_encoder.ncd dual_priority_encoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml dual_priority_encoder.twx dual_priority_encoder.ncd -o dual_priority_encoder.twr dual_priority_encoder.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "dual_priority_encoder.ngc" dual_priority_encoder.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o dual_priority_encoder_map.ncd dual_priority_encoder.ngd dual_priority_encoder.pcf 
+par -w -intstyle ise -ol high -t 1 dual_priority_encoder_map.ncd dual_priority_encoder.ncd dual_priority_encoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml dual_priority_encoder.twx dual_priority_encoder.ncd -o dual_priority_encoder.twr dual_priority_encoder.pcf 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.syr" 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.syr" 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.syr" 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.syr" 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.syr" 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "dual_priority_encoder.ngc" dual_priority_encoder.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o dual_priority_encoder_map.ncd dual_priority_encoder.ngd dual_priority_encoder.pcf 
+par -w -intstyle ise -ol high -t 1 dual_priority_encoder_map.ncd dual_priority_encoder.ncd dual_priority_encoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml dual_priority_encoder.twx dual_priority_encoder.ncd -o dual_priority_encoder.twr dual_priority_encoder.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "dual_priority_encoder.ngc" dual_priority_encoder.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o dual_priority_encoder_map.ncd dual_priority_encoder.ngd dual_priority_encoder.pcf 
+par -w -intstyle ise -ol high -t 1 dual_priority_encoder_map.ncd dual_priority_encoder.ncd dual_priority_encoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml dual_priority_encoder.twx dual_priority_encoder.ncd -o dual_priority_encoder.twr dual_priority_encoder.pcf 
+bitgen -intstyle ise -f dual_priority_encoder.ut dual_priority_encoder.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s50a-tq144-5 "dual_priority_encoder.ngc" dual_priority_encoder.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o dual_priority_encoder_map.ncd dual_priority_encoder.ngd dual_priority_encoder.pcf 
+par -w -intstyle ise -ol high -t 1 dual_priority_encoder_map.ncd dual_priority_encoder.ncd dual_priority_encoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml dual_priority_encoder.twx dual_priority_encoder.ncd -o dual_priority_encoder.twr dual_priority_encoder.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f dual_priority_encoder.ut dual_priority_encoder.ncd 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.syr" 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s50a-tq144-5 "dual_priority_encoder.ngc" dual_priority_encoder.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o dual_priority_encoder_map.ncd dual_priority_encoder.ngd dual_priority_encoder.pcf 
+par -w -intstyle ise -ol high -t 1 dual_priority_encoder_map.ncd dual_priority_encoder.ncd dual_priority_encoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml dual_priority_encoder.twx dual_priority_encoder.ncd -o dual_priority_encoder.twr dual_priority_encoder.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f dual_priority_encoder.ut dual_priority_encoder.ncd 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s50a-tq144-5 "dual_priority_encoder.ngc" dual_priority_encoder.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o dual_priority_encoder_map.ncd dual_priority_encoder.ngd dual_priority_encoder.pcf 
+par -w -intstyle ise -ol high -t 1 dual_priority_encoder_map.ncd dual_priority_encoder.ncd dual_priority_encoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml dual_priority_encoder.twx dual_priority_encoder.ncd -o dual_priority_encoder.twr dual_priority_encoder.pcf -ucf constraints.ucf 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/dual_priority_encoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s50a-tq144-5 "dual_priority_encoder.ngc" dual_priority_encoder.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o dual_priority_encoder_map.ncd dual_priority_encoder.ngd dual_priority_encoder.pcf 
+par -w -intstyle ise -ol high -t 1 dual_priority_encoder_map.ncd dual_priority_encoder.ncd dual_priority_encoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml dual_priority_encoder.twx dual_priority_encoder.ncd -o dual_priority_encoder.twr dual_priority_encoder.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f dual_priority_encoder.ut dual_priority_encoder.ncd 

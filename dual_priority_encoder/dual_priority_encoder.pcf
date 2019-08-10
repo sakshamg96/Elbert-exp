@@ -1,0 +1,33 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Sun Jul 28 19:48:38 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "req<0>" LOCATE = SITE "P58" LEVEL 1;
+COMP "req<1>" LOCATE = SITE "P59" LEVEL 1;
+COMP "req<2>" LOCATE = SITE "P60" LEVEL 1;
+COMP "req<3>" LOCATE = SITE "P63" LEVEL 1;
+COMP "req<4>" LOCATE = SITE "P64" LEVEL 1;
+COMP "req<5>" LOCATE = SITE "P68" LEVEL 1;
+COMP "clk" LOCATE = SITE "P129" LEVEL 1;
+COMP "req<6>" LOCATE = SITE "P69" LEVEL 1;
+COMP "req<7>" LOCATE = SITE "P70" LEVEL 1;
+COMP "req<8>" LOCATE = SITE "P80" LEVEL 1;
+COMP "req<9>" LOCATE = SITE "P79" LEVEL 1;
+COMP "req<10>" LOCATE = SITE "P78" LEVEL 1;
+COMP "sseg<0>" LOCATE = SITE "P114" LEVEL 1;
+COMP "req<11>" LOCATE = SITE "P77" LEVEL 1;
+COMP "sseg<1>" LOCATE = SITE "P110" LEVEL 1;
+COMP "sseg<2>" LOCATE = SITE "P111" LEVEL 1;
+COMP "sseg<3>" LOCATE = SITE "P112" LEVEL 1;
+COMP "sseg<4>" LOCATE = SITE "P113" LEVEL 1;
+COMP "sseg<5>" LOCATE = SITE "P115" LEVEL 1;
+COMP "sseg<6>" LOCATE = SITE "P116" LEVEL 1;
+COMP "sseg<7>" LOCATE = SITE "P117" LEVEL 1;
+COMP "en<0>" LOCATE = SITE "P120" LEVEL 1;
+COMP "en<1>" LOCATE = SITE "P121" LEVEL 1;
+COMP "en<2>" LOCATE = SITE "P124" LEVEL 1;
+COMP "rst" LOCATE = SITE "P75" LEVEL 1;
+NET "clk_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+SCHEMATIC END;
+

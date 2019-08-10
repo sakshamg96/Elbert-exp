@@ -1,0 +1,5 @@
+set -tmpdir "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/xst/projnav.tmp"
+set -xsthdpdir "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_priority_encoder/xst"
+elaborate
+-ifn priority_encoder_12_4.prj
+-ifmt mixed

@@ -1,0 +1,6 @@
+MO decoder_2to4 NULL ../decoder_2to4/decoder_2to4.v vlg76/decoder__2to4.bin 1564323500
+MO priority_encoder_12_4 NULL ../priority_encoder_12_4/priority_encode_12_4.v vlg32/priority__encoder__12__4.bin 1564323500
+MO decoder_4bit NULL ../decoder_4bit/deoder_4bit.v vlg50/decoder__4bit.bin 1564323501
+MO hex_sseg NULL ../hex_sseg/hex_sseg.v vlg5E/hex__sseg.bin 1564323500
+MO dual_priority_encoder NULL dual_priority_encoder.v vlg6A/dual__priority__encoder.bin 1564323501
+MO disp_mux NULL ../disp_mux/disp_mux.v vlg4D/disp__mux.bin 1564323501
