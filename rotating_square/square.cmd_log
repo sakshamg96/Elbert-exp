@@ -1,0 +1,52 @@
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/rotating_square/square.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/rotating_square/square.syr" 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/rotating_square/square.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/rotating_square/square.syr" 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/rotating_square/square.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/rotating_square/square.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "square.ngc" square.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o square_map.ncd square.ngd square.pcf 
+par -w -intstyle ise -ol high -t 1 square_map.ncd square.ncd square.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml square.twx square.ncd -o square.twr square.pcf 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/rotating_square/square.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/rotating_square/square.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "square.ngc" square.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o square_map.ncd square.ngd square.pcf 
+par -w -intstyle ise -ol high -t 1 square_map.ncd square.ncd square.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml square.twx square.ncd -o square.twr square.pcf 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/rotating_square/square.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/rotating_square/square.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "square.ngc" square.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o square_map.ncd square.ngd square.pcf 
+par -w -intstyle ise -ol high -t 1 square_map.ncd square.ncd square.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml square.twx square.ncd -o square.twr square.pcf 
+bitgen -intstyle ise -f square.ut square.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "square.ngc" square.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o square_map.ncd square.ngd square.pcf 
+par -w -intstyle ise -ol high -t 1 square_map.ncd square.ncd square.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml square.twx square.ncd -o square.twr square.pcf 
+bitgen -intstyle ise -f square.ut square.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s50a-tq144-5 "square.ngc" square.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o square_map.ncd square.ngd square.pcf 
+par -w -intstyle ise -ol high -t 1 square_map.ncd square.ncd square.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml square.twx square.ncd -o square.twr square.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f square.ut square.ncd 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/rotating_square/square.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/rotating_square/square.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s50a-tq144-5 "square.ngc" square.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o square_map.ncd square.ngd square.pcf 
+par -w -intstyle ise -ol high -t 1 square_map.ncd square.ncd square.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml square.twx square.ncd -o square.twr square.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f square.ut square.ncd 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/rotating_square/square.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/rotating_square/square.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s50a-tq144-5 "square.ngc" square.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o square_map.ncd square.ngd square.pcf 
+par -w -intstyle ise -ol high -t 1 square_map.ncd square.ncd square.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml square.twx square.ncd -o square.twr square.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f square.ut square.ncd 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/rotating_square/square.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/rotating_square/square.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s50a-tq144-5 "square.ngc" square.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o square_map.ncd square.ngd square.pcf 
+par -w -intstyle ise -ol high -t 1 square_map.ncd square.ncd square.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml square.twx square.ncd -o square.twr square.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f square.ut square.ncd 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/rotating_square/square.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/rotating_square/square.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s50a-tq144-5 "square.ngc" square.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o square_map.ncd square.ngd square.pcf 
+par -w -intstyle ise -ol high -t 1 square_map.ncd square.ncd square.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml square.twx square.ncd -o square.twr square.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f square.ut square.ncd 
