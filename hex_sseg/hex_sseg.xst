@@ -1,0 +1,5 @@
+set -tmpdir "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/hex_sseg/xst/projnav.tmp"
+set -xsthdpdir "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/hex_sseg/xst"
+elaborate
+-ifn hex_sseg.prj
+-ifmt mixed
