@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/hex_BCD/hex_BCD.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/hex_BCD/hex_BCD.syr" 
