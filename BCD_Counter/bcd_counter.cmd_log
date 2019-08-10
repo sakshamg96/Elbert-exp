@@ -1,0 +1,121 @@
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bcd_count.ucf -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf -ucf bcd_count.ucf 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bcd_count.ucf -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf -ucf bcd_count.ucf 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bcd_count.ucf -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf -ucf bcd_count.ucf 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bcd_count.ucf -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf -ucf bcd_count.ucf 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bcd_count.ucf -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf -ucf bcd_count.ucf 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bcd_count.ucf -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf -ucf bcd_count.ucf 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bcd_count.ucf -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf -ucf bcd_count.ucf 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bcd_count.ucf -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf -ucf bcd_count.ucf 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bcd_count.ucf -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf -ucf bcd_count.ucf 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bcd_count.ucf -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf -ucf bcd_count.ucf 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bcd_count.ucf -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf -ucf bcd_count.ucf 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bcd_count.ucf -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf -ucf bcd_count.ucf 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bcd_count.ucf -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf -ucf bcd_count.ucf 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bcd_count.ucf -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf -ucf bcd_count.ucf 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bcd_count.ucf -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf -ucf bcd_count.ucf 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bcd_count.ucf -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf -ucf bcd_count.ucf 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bcd_count.ucf -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf -ucf bcd_count.ucf 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 
+xst -intstyle ise -ifn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.xst" -ofn "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bcd_count.ucf -p xc3s50a-tq144-5 "bcd_counter.ngc" bcd_counter.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o bcd_counter_map.ncd bcd_counter.ngd bcd_counter.pcf 
+par -w -intstyle ise -ol high -t 1 bcd_counter_map.ncd bcd_counter.ncd bcd_counter.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd_counter.twx bcd_counter.ncd -o bcd_counter.twr bcd_counter.pcf -ucf bcd_count.ucf 
+bitgen -intstyle ise -f bcd_counter.ut bcd_counter.ncd 

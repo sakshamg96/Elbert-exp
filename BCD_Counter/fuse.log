@@ -1,0 +1,20 @@
+Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter_test_isim_beh.exe -prj C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter_test_beh.prj work.bcd_counter_test work.glbl 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter.v" into library work
+Analyzing Verilog file "C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter_test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module bcd_counter
+Compiling module bcd_counter_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\bcd_counter_test_isim_beh.exe.sim\libPortability.dll".
+Compiled 3 Verilog Units
+Built simulation executable C:/Users/Saksham/Desktop/Elbert V2/Codes/BCD_Counter/bcd_counter_test_isim_beh.exe
+Fuse Memory Usage: 27440 KB
+Fuse CPU Usage: 749 ms
