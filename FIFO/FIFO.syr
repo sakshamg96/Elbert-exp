@@ -1,0 +1,428 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.34 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.34 secs
+ 
+--> Reading design: FIFO.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "FIFO.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "FIFO"
+Output Format                      : NGC
+Target Device                      : xc3s50a-5-tq144
+
+---- Source Options
+Top Module Name                    : FIFO
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "FIFO.v" in library work
+Module <FIFO> compiled
+No errors in compilation
+Analysis of file <"FIFO.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <FIFO> in library <work> with parameters.
+	depth = "00000000000000000000000000000100"
+	width = "00000000000000000000000000000011"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <FIFO>.
+	depth = 32'sb00000000000000000000000000000100
+	width = 32'sb00000000000000000000000000000011
+INFO:Xst:1433 - Contents of array <mem> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <mem> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Module <FIFO> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <FIFO>.
+    Related source file is "FIFO.v".
+    Found 4x3-bit dual-port RAM <Mram_mem> for signal <mem>.
+    Found 1-bit register for signal <empty>.
+    Found 3-bit register for signal <fout>.
+    Found 1-bit register for signal <full>.
+    Found 6-bit subtractor for signal <$sub0000> created at line 92.
+    Found 6-bit subtractor for signal <$sub0001> created at line 110.
+    Found 6-bit comparator equal for signal <empty$cmp_eq0000> created at line 110.
+    Found 4-bit comparator equal for signal <full$cmp_eq0000> created at line 95.
+    Found 6-bit comparator equal for signal <full$cmp_eq0001> created at line 92.
+    Found 4-bit up counter for signal <rd_pointer>.
+    Found 4-bit up counter for signal <wr_pointer>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Counter(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <FIFO> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x3-bit dual-port RAM                                 : 1
+# Adders/Subtractors                                   : 2
+ 6-bit subtractor                                      : 2
+# Counters                                             : 2
+ 4-bit up counter                                      : 2
+# Registers                                            : 3
+ 1-bit register                                        : 2
+ 3-bit register                                        : 1
+# Comparators                                          : 3
+ 4-bit comparator equal                                : 1
+ 6-bit comparator equal                                : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <FIFO>.
+INFO:Xst:3217 - HDL ADVISOR - Register <fout> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_mem> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 3-bit                      |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <_and0000>      | high     |
+    |     addrA          | connected to signal <wr_pointer>    |          |
+    |     diA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 4-word x 3-bit                      |          |
+    |     addrB          | connected to signal <rd_pointer>    |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <FIFO> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x3-bit dual-port distributed RAM                     : 1
+# Adders/Subtractors                                   : 2
+ 6-bit subtractor                                      : 2
+# Counters                                             : 2
+ 4-bit up counter                                      : 2
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+# Comparators                                          : 3
+ 4-bit comparator equal                                : 1
+ 6-bit comparator equal                                : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <FIFO> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block FIFO, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : FIFO.ngr
+Top Level Output File Name         : FIFO
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 32
+#      GND                         : 1
+#      INV                         : 3
+#      LUT2                        : 6
+#      LUT3                        : 6
+#      LUT3_D                      : 1
+#      LUT4                        : 11
+#      LUT4_D                      : 1
+#      LUT4_L                      : 1
+#      MUXF5                       : 2
+# FlipFlops/Latches                : 13
+#      FDCE                        : 12
+#      FDPE                        : 1
+# RAMS                             : 3
+#      RAM16X1D                    : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 6
+#      OBUF                        : 5
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50atq144-5 
+
+ Number of Slices:                       14  out of    704     1%  
+ Number of Slice Flip Flops:             13  out of   1408     0%  
+ Number of 4 input LUTs:                 35  out of   1408     2%  
+    Number used as logic:                29
+    Number used as RAMs:                  6
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    108    11%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 16    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst_inv(rst_inv1_INV_0:O)          | NONE(empty)            | 13    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.294ns (Maximum Frequency: 188.897MHz)
+   Minimum input arrival time before clock: 4.128ns
+   Maximum output required time after clock: 5.390ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.294ns (frequency: 188.897MHz)
+  Total number of paths / destination ports: 151 / 41
+-------------------------------------------------------------------------
+Delay:               5.294ns (Levels of Logic = 5)
+  Source:            wr_pointer_3 (FF)
+  Destination:       full (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: wr_pointer_3 to full
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.495   0.607  wr_pointer_3 (wr_pointer_3)
+     LUT4:I0->O            1   0.561   0.465  full_and000154 (full_and000154)
+     LUT4:I0->O            1   0.561   0.000  full_and000193_G (N5)
+     MUXF5:I1->O           1   0.229   0.359  full_and000193 (full_and000193)
+     LUT4:I3->O            2   0.561   0.382  full_and0001117 (full_and0001)
+     LUT4:I3->O            1   0.561   0.357  full_not00011 (full_not0001)
+     FDCE:CE                   0.156          full
+    ----------------------------------------
+    Total                      5.294ns (3.124ns logic, 2.170ns route)
+                                       (59.0% logic, 41.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 26 / 21
+-------------------------------------------------------------------------
+Offset:              4.128ns (Levels of Logic = 4)
+  Source:            wr (PAD)
+  Destination:       empty (FF)
+  Destination Clock: clk rising
+
+  Data Path: wr to empty
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.824   0.604  wr_IBUF (wr_IBUF)
+     LUT2:I1->O            1   0.562   0.380  full_cmp_eq000041_SW0 (N02)
+     LUT4_L:I2->LO         1   0.561   0.123  empty_not0001129 (empty_not0001129)
+     LUT4:I2->O            1   0.561   0.357  empty_not0001132 (empty_not0001)
+     FDPE:CE                   0.156          empty
+    ----------------------------------------
+    Total                      4.128ns (2.664ns logic, 1.464ns route)
+                                       (64.5% logic, 35.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              5.390ns (Levels of Logic = 1)
+  Source:            empty (FF)
+  Destination:       empty (PAD)
+  Source Clock:      clk rising
+
+  Data Path: empty to empty
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             4   0.495   0.499  empty (empty_OBUF)
+     OBUF:I->O                 4.396          empty_OBUF (empty)
+    ----------------------------------------
+    Total                      5.390ns (4.891ns logic, 0.499ns route)
+                                       (90.7% logic, 9.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.03 secs
+ 
+--> 
+
+Total memory usage is 4530704 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

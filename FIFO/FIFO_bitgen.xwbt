@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Personal\G Drive\Digtal System Design\Elbert V2\Codes\FIFO\FIFO.ncd
+OUTFILE=C:\Personal\G Drive\Digtal System Design\Elbert V2\Codes\FIFO\FIFO.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-5tq144
+WORKINGDIR=C:\Personal\G Drive\Digtal System Design\Elbert V2\Codes\FIFO
+LICENSE=WebPack
+USER_INFO=210970348_0_0_477

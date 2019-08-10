@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Tue Aug 06 07:43:37 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "data<0>" LOCATE = SITE "P58" LEVEL 1;
+COMP "data<1>" LOCATE = SITE "P59" LEVEL 1;
+COMP "clk" LOCATE = SITE "P129" LEVEL 1;
+COMP "data<2>" LOCATE = SITE "P60" LEVEL 1;
+COMP "rd" LOCATE = SITE "P78" LEVEL 1;
+COMP "fout<0>" LOCATE = SITE "P55" LEVEL 1;
+COMP "wr" LOCATE = SITE "P79" LEVEL 1;
+COMP "fout<1>" LOCATE = SITE "P54" LEVEL 1;
+COMP "fout<2>" LOCATE = SITE "P51" LEVEL 1;
+COMP "rst" LOCATE = SITE "P80" LEVEL 1;
+NET "clk_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+SCHEMATIC END;
+

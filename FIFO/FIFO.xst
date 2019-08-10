@@ -1,0 +1,5 @@
+set -tmpdir "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/FIFO/xst/projnav.tmp"
+set -xsthdpdir "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/FIFO/xst"
+elaborate
+-ifn FIFO.prj
+-ifmt mixed
