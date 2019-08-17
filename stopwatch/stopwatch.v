@@ -24,6 +24,7 @@ input clk,
 input rst,
 input start,
 input sync_clr,
+input dir,
 output [2:0] en,
 output [7:0] sseg
     );
@@ -92,11 +93,21 @@ begin
 				end
 				else begin
 					if(cnt == 21'd1199999) begin
-						if(hex==10'd999) begin
-							hex <= 10'd0;
+						if (dir) begin
+							if(hex==10'd999) begin
+								hex <= 10'd0;
+							end
+							else begin
+								hex <= hex + 10'b1;								
+							end
 						end
 						else begin
-							hex <= hex + 1;
+							if(hex==10'd0) begin
+								hex <= 10'd999;
+							end
+							else begin
+								hex <= hex - 10'b1;
+							end
 						end
 					end
 				end
