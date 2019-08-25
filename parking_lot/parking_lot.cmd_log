@@ -1,0 +1,36 @@
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/parking_lot.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/parking_lot.syr" 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/parking_lot.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/parking_lot.syr" 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/parking_lot.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/parking_lot.syr" 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/parking_lot.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/parking_lot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "parking_lot.ngc" parking_lot.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o parking_lot_map.ncd parking_lot.ngd parking_lot.pcf 
+par -w -intstyle ise -ol high -t 1 parking_lot_map.ncd parking_lot.ncd parking_lot.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml parking_lot.twx parking_lot.ncd -o parking_lot.twr parking_lot.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s50a-tq144-5 "parking_lot.ngc" parking_lot.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o parking_lot_map.ncd parking_lot.ngd parking_lot.pcf 
+par -w -intstyle ise -ol high -t 1 parking_lot_map.ncd parking_lot.ncd parking_lot.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml parking_lot.twx parking_lot.ncd -o parking_lot.twr parking_lot.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f parking_lot.ut parking_lot.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s50a-tq144-5 "parking_lot.ngc" parking_lot.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o parking_lot_map.ncd parking_lot.ngd parking_lot.pcf 
+par -w -intstyle ise -ol high -t 1 parking_lot_map.ncd parking_lot.ncd parking_lot.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml parking_lot.twx parking_lot.ncd -o parking_lot.twr parking_lot.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f parking_lot.ut parking_lot.ncd 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/parking_lot.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/parking_lot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s50a-tq144-5 "parking_lot.ngc" parking_lot.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o parking_lot_map.ncd parking_lot.ngd parking_lot.pcf 
+par -w -intstyle ise -ol high -t 1 parking_lot_map.ncd parking_lot.ncd parking_lot.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml parking_lot.twx parking_lot.ncd -o parking_lot.twr parking_lot.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f parking_lot.ut parking_lot.ncd 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/parking_lot.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/parking_lot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s50a-tq144-5 "parking_lot.ngc" parking_lot.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o parking_lot_map.ncd parking_lot.ngd parking_lot.pcf 
+par -w -intstyle ise -ol high -t 1 parking_lot_map.ncd parking_lot.ncd parking_lot.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml parking_lot.twx parking_lot.ncd -o parking_lot.twr parking_lot.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f parking_lot.ut parking_lot.ncd 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/parking_lot.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/parking_lot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s50a-tq144-5 "parking_lot.ngc" parking_lot.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o parking_lot_map.ncd parking_lot.ngd parking_lot.pcf 
+par -w -intstyle ise -ol high -t 1 parking_lot_map.ncd parking_lot.ncd parking_lot.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml parking_lot.twx parking_lot.ncd -o parking_lot.twr parking_lot.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f parking_lot.ut parking_lot.ncd 

@@ -1,0 +1,26 @@
+Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/testbench_isim_beh.exe -prj C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/testbench_beh.prj work.testbench work.glbl 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/../hex_sseg/hex_sseg.v" into library work
+Analyzing Verilog file "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/../hex_BCD/hex_BCD.v" into library work
+Analyzing Verilog file "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/../disp_mux/disp_mux.v" into library work
+Analyzing Verilog file "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/parking_lot.v" into library work
+Analyzing Verilog file "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/testbench.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module hex_BCD
+Compiling module disp_mux(width=4)
+Compiling module hex_sseg
+Compiling module parking_lot
+Compiling module testbench
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\testbench_isim_beh.exe.sim\libPortability.dll".
+Compiled 6 Verilog Units
+Built simulation executable C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/parking_lot/testbench_isim_beh.exe
+Fuse Memory Usage: 27256 KB
+Fuse CPU Usage: 577 ms

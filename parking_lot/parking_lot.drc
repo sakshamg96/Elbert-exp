@@ -1,0 +1,8 @@
+Release 14.2 Drc P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sat Aug 24 20:48:37 2019
+
+drc -z parking_lot.ncd parking_lot.pcf
+
+DRC detected 0 errors and 0 warnings.

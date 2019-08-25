@@ -1,0 +1,6 @@
+verilog isim_temp "../hex_sseg/hex_sseg.v"
+verilog isim_temp "../hex_BCD/hex_BCD.v"
+verilog isim_temp "../disp_mux/disp_mux.v"
+verilog isim_temp "parking_lot.v"
+verilog isim_temp "testbench.v"
+verilog isim_temp "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v"

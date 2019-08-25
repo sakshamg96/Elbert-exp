@@ -1,0 +1,6 @@
+verilog work "../hex_sseg/hex_sseg.v"
+verilog work "../hex_BCD/hex_BCD.v"
+verilog work "../disp_mux/disp_mux.v"
+verilog work "parking_lot.v"
+verilog work "testbench.v"
+verilog work "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v"

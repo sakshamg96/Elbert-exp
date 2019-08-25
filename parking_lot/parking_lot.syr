@@ -1,0 +1,559 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: parking_lot.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "parking_lot.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "parking_lot"
+Output Format                      : NGC
+Target Device                      : xc3s50a-5-tq144
+
+---- Source Options
+Top Module Name                    : parking_lot
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../hex_sseg/hex_sseg.v" in library work
+Compiling verilog file "../hex_BCD/hex_BCD.v" in library work
+Module <hex_sseg> compiled
+Compiling verilog file "../disp_mux/disp_mux.v" in library work
+Module <hex_BCD> compiled
+Compiling verilog file "parking_lot.v" in library work
+Module <disp_mux> compiled
+Module <parking_lot> compiled
+No errors in compilation
+Analysis of file <"parking_lot.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <parking_lot> in library <work> with parameters.
+	block = "0"
+	entry_1 = "000"
+	entry_2 = "001"
+	entry_3 = "010"
+	exit_1 = "011"
+	exit_2 = "100"
+	exit_3 = "101"
+	idle = "110"
+	unblock = "1"
+
+Analyzing hierarchy for module <hex_BCD> in library <work>.
+
+Analyzing hierarchy for module <disp_mux> in library <work> with parameters.
+	N = "00000000000000000000000000010001"
+	width = "00000000000000000000000000000100"
+
+Analyzing hierarchy for module <hex_sseg> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <parking_lot>.
+	block = 1'b0
+	entry_1 = 3'b000
+	entry_2 = 3'b001
+	entry_3 = 3'b010
+	exit_1 = 3'b011
+	exit_2 = 3'b100
+	exit_3 = 3'b101
+	idle = 3'b110
+	unblock = 1'b1
+Module <parking_lot> is correct for synthesis.
+ 
+Analyzing module <hex_BCD> in library <work>.
+Module <hex_BCD> is correct for synthesis.
+ 
+Analyzing module <disp_mux> in library <work>.
+	N = 32'sb00000000000000000000000000010001
+	width = 32'sb00000000000000000000000000000100
+Module <disp_mux> is correct for synthesis.
+ 
+Analyzing module <hex_sseg> in library <work>.
+Module <hex_sseg> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <hex_BCD>.
+    Related source file is "../hex_BCD/hex_BCD.v".
+    Found 4-bit adder for signal <$add0000> created at line 35.
+    Found 4-bit adder for signal <$add0001> created at line 35.
+    Found 4-bit adder for signal <$add0002> created at line 35.
+    Found 4-bit adder for signal <$add0003> created at line 35.
+    Found 4-bit adder for signal <$add0004> created at line 38.
+    Found 4-bit adder for signal <$add0005> created at line 35.
+    Found 4-bit adder for signal <$add0006> created at line 38.
+    Found 4-bit adder for signal <$add0007> created at line 35.
+    Found 4-bit adder for signal <$add0008> created at line 38.
+    Found 4-bit adder for signal <$add0009> created at line 35.
+    Found 4-bit adder for signal <$add0010> created at line 38.
+    Found 4-bit adder for signal <$add0011> created at line 41.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0000> created at line 34.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0001> created at line 34.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0002> created at line 34.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0003> created at line 37.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0004> created at line 34.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0005> created at line 37.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0006> created at line 34.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0007> created at line 37.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0008> created at line 34.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0009> created at line 40.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0010> created at line 37.
+    Found 4-bit comparator greater for signal <BCD$cmp_gt0011> created at line 34.
+    Summary:
+	inferred  12 Adder/Subtractor(s).
+	inferred  12 Comparator(s).
+Unit <hex_BCD> synthesized.
+
+
+Synthesizing Unit <disp_mux>.
+    Related source file is "../disp_mux/disp_mux.v".
+    Found 4x3-bit ROM for signal <en>.
+    Found 4-bit 4-to-1 multiplexer for signal <sseg>.
+    Found 17-bit up counter for signal <cnt>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred   4 Multiplexer(s).
+Unit <disp_mux> synthesized.
+
+
+Synthesizing Unit <hex_sseg>.
+    Related source file is "../hex_sseg/hex_sseg.v".
+    Found 32x8-bit ROM for signal <seg>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <hex_sseg> synthesized.
+
+
+Synthesizing Unit <parking_lot>.
+    Related source file is "parking_lot.v".
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 21                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst_n                     (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 110                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit register for signal <hex>.
+    Found 10-bit 4-to-1 multiplexer for signal <hex$mux0000> created at line 162.
+    Found 10-bit addsub for signal <hex$share0000> created at line 162.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 Multiplexer(s).
+Unit <parking_lot> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 32x8-bit ROM                                          : 1
+ 4x3-bit ROM                                           : 1
+# Adders/Subtractors                                   : 13
+ 10-bit addsub                                         : 1
+ 4-bit adder                                           : 12
+# Counters                                             : 1
+ 17-bit up counter                                     : 1
+# Registers                                            : 1
+ 10-bit register                                       : 1
+# Comparators                                          : 12
+ 4-bit comparator greater                              : 12
+# Multiplexers                                         : 2
+ 10-bit 4-to-1 multiplexer                             : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <state_reg/FSM> on signal <state_reg[1:3]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 001
+ 001   | 011
+ 010   | 100
+ 011   | 010
+ 100   | 101
+ 101   | 110
+ 110   | 000
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 2
+ 32x8-bit ROM                                          : 1
+ 4x3-bit ROM                                           : 1
+# Adders/Subtractors                                   : 13
+ 10-bit addsub                                         : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 11
+# Counters                                             : 1
+ 17-bit up counter                                     : 1
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+# Comparators                                          : 12
+ 4-bit comparator greater                              : 12
+# Multiplexers                                         : 2
+ 10-bit 4-to-1 multiplexer                             : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <parking_lot> ...
+
+Optimizing unit <hex_BCD> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block parking_lot, actual ratio is 12.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : parking_lot.ngr
+Top Level Output File Name         : parking_lot
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 15
+
+Cell Usage :
+# BELS                             : 196
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 13
+#      LUT3                        : 50
+#      LUT4                        : 69
+#      MUXCY                       : 25
+#      MUXF5                       : 9
+#      VCC                         : 1
+#      XORCY                       : 27
+# FlipFlops/Latches                : 30
+#      FDC                         : 30
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 3
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50atq144-5 
+
+ Number of Slices:                       73  out of    704    10%  
+ Number of Slice Flip Flops:             30  out of   1408     2%  
+ Number of 4 input LUTs:                133  out of   1408     9%  
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    108    13%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 30    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst_n_inv(rst_n_inv1_INV_0:O)      | NONE(d1/cnt_0)         | 30    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.991ns (Maximum Frequency: 166.921MHz)
+   Minimum input arrival time before clock: 7.363ns
+   Maximum output required time after clock: 24.471ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.991ns (frequency: 166.921MHz)
+  Total number of paths / destination ports: 1142 / 30
+-------------------------------------------------------------------------
+Delay:               5.991ns (Levels of Logic = 13)
+  Source:            state_reg_FSM_FFd2 (FF)
+  Destination:       hex_9 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: state_reg_FSM_FFd2 to hex_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.495   0.819  state_reg_FSM_FFd2 (state_reg_FSM_FFd2)
+     LUT4:I3->O            9   0.561   0.720  dec1 (dec)
+     LUT3:I2->O            1   0.561   0.000  Maddsub_hex_share0000_lut<0> (Maddsub_hex_share0000_lut<0>)
+     MUXCY:S->O            1   0.523   0.000  Maddsub_hex_share0000_cy<0> (Maddsub_hex_share0000_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_hex_share0000_cy<1> (Maddsub_hex_share0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_hex_share0000_cy<2> (Maddsub_hex_share0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_hex_share0000_cy<3> (Maddsub_hex_share0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_hex_share0000_cy<4> (Maddsub_hex_share0000_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_hex_share0000_cy<5> (Maddsub_hex_share0000_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_hex_share0000_cy<6> (Maddsub_hex_share0000_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_hex_share0000_cy<7> (Maddsub_hex_share0000_cy<7>)
+     MUXCY:CI->O           0   0.065   0.000  Maddsub_hex_share0000_cy<8> (Maddsub_hex_share0000_cy<8>)
+     XORCY:CI->O           1   0.654   0.380  Maddsub_hex_share0000_xor<9> (hex_share0000<9>)
+     LUT3:I2->O            1   0.561   0.000  Mmux_hex_mux000030 (hex_mux0000<9>)
+     FDC:D                     0.197          hex_9
+    ----------------------------------------
+    Total                      5.991ns (4.072ns logic, 1.919ns route)
+                                       (68.0% logic, 32.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 264 / 13
+-------------------------------------------------------------------------
+Offset:              7.363ns (Levels of Logic = 15)
+  Source:            b (PAD)
+  Destination:       hex_9 (FF)
+  Destination Clock: clk rising
+
+  Data Path: b to hex_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.824   0.751  b_IBUF (b_IBUF)
+     LUT2:I0->O            3   0.561   0.559  inc_SW0 (N27)
+     LUT4:I0->O            8   0.561   0.709  inc (inc)
+     LUT3:I1->O            1   0.562   0.000  Maddsub_hex_share0000_lut<0> (Maddsub_hex_share0000_lut<0>)
+     MUXCY:S->O            1   0.523   0.000  Maddsub_hex_share0000_cy<0> (Maddsub_hex_share0000_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_hex_share0000_cy<1> (Maddsub_hex_share0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_hex_share0000_cy<2> (Maddsub_hex_share0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_hex_share0000_cy<3> (Maddsub_hex_share0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_hex_share0000_cy<4> (Maddsub_hex_share0000_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_hex_share0000_cy<5> (Maddsub_hex_share0000_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_hex_share0000_cy<6> (Maddsub_hex_share0000_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_hex_share0000_cy<7> (Maddsub_hex_share0000_cy<7>)
+     MUXCY:CI->O           0   0.065   0.000  Maddsub_hex_share0000_cy<8> (Maddsub_hex_share0000_cy<8>)
+     XORCY:CI->O           1   0.654   0.380  Maddsub_hex_share0000_xor<9> (hex_share0000<9>)
+     LUT3:I2->O            1   0.561   0.000  Mmux_hex_mux000030 (hex_mux0000<9>)
+     FDC:D                     0.197          hex_9
+    ----------------------------------------
+    Total                      7.363ns (4.963ns logic, 2.400ns route)
+                                       (67.4% logic, 32.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 292046 / 10
+-------------------------------------------------------------------------
+Offset:              24.471ns (Levels of Logic = 19)
+  Source:            hex_8 (FF)
+  Destination:       sseg<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: hex_8 to sseg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.495   0.805  hex_8 (hex_8)
+     LUT4:I0->O            8   0.561   0.751  h1/BCD_mux00041 (h1/BCD_mux0004)
+     LUT3:I0->O            7   0.561   0.710  h1/Madd__add0002_cy<1>11 (h1/Madd__add0002_cy<1>)
+     LUT3:I0->O            3   0.561   0.559  h1/BCD_cmp_gt00021 (h1/BCD_cmp_gt0002)
+     LUT3:I0->O            2   0.561   0.382  h1/Madd__add0003_cy<1>11 (h1/Madd__add0003_cy<1>)
+     LUT4:I3->O            2   0.561   0.382  h1/BCD_mux001611 (h1/N13)
+     LUT4:I3->O            4   0.561   0.607  h1/BCD_cmp_gt00041 (h1/BCD_cmp_gt0004)
+     LUT2:I0->O            2   0.561   0.488  h1/BCD_mux001821 (h1/N61)
+     LUT4:I0->O           10   0.561   0.858  h1/BCD_mux002411 (h1/N14)
+     LUT3:I0->O            1   0.561   0.465  h1/BCD_mux002621 (h1/N51)
+     LUT4:I0->O            5   0.561   0.604  h1/BCD_mux003211 (h1/N16)
+     LUT2:I1->O            2   0.562   0.488  h1/BCD_mux00322 (h1/Madd__add0010_cy<0>)
+     LUT4:I0->O            3   0.561   0.453  h1/Madd__add0010_cy<1>1 (h1/Madd__add0010_cy<1>)
+     LUT4:I3->O            3   0.561   0.474  h1/BCD_mux003911 (h1/N17)
+     LUT4:I2->O            1   0.561   0.380  h1/BCD_mux004121 (h1/N10)
+     LUT4:I2->O            1   0.561   0.380  d1/Mmux_sseg9189_SW0 (N59)
+     LUT3:I2->O            1   0.561   0.000  d1/Mmux_sseg9200_F (N83)
+     MUXF5:I0->O           7   0.229   0.668  d1/Mmux_sseg9200 (bcd_curr<2>)
+     LUT4:I1->O            1   0.562   0.357  ins_hex/Mrom_seg61 (ins_hex/Mrom_seg6)
+     OBUF:I->O                 4.396          sseg_6_OBUF (sseg<6>)
+    ----------------------------------------
+    Total                     24.471ns (14.659ns logic, 9.812ns route)
+                                       (59.9% logic, 40.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.58 secs
+ 
+--> 
+
+Total memory usage is 4532760 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
