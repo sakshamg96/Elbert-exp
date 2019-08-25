@@ -1,9 +1,10 @@
 //! **************************************************************************
-// Written by: Map P.28xd on Sat Aug 03 21:52:09 2019
+// Written by: Map P.28xd on Sat Aug 17 08:55:12 2019
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "clk" LOCATE = SITE "P129" LEVEL 1;
+COMP "dir" LOCATE = SITE "P58" LEVEL 1;
 COMP "sseg<0>" LOCATE = SITE "P114" LEVEL 1;
 COMP "sseg<1>" LOCATE = SITE "P110" LEVEL 1;
 COMP "sseg<2>" LOCATE = SITE "P111" LEVEL 1;

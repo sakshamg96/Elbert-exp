@@ -1,7 +1,7 @@
 #Release 14.2 - par P.28xd (nt64)
 #Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-#Sat Aug 03 21:52:20 2019
+#Sat Aug 17 08:55:23 2019
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -76,7 +76,7 @@ P54,,DIFFMTB,IO_L08P_2/GCLK14,UNUSED,,2,,,,,,,,,
 P55,,DIFFSTB,IO_L08N_2/GCLK15,UNUSED,,2,,,,,,,,,
 P56,,,GND,,,,,,,,,,,,
 P57,,DIFFMTB,IO_L09P_2/GCLK0,UNUSED,,2,,,,,,,,,
-P58,,DIFFMTB,IO_L10P_2/GCLK2,UNUSED,,2,,,,,,,,,
+P58,dir,IBUF,IO_L10P_2/GCLK2,INPUT,LVCMOS33,2,,,PULLUP,IBUF,,LOCATED,NO,NONE,
 P59,,DIFFSTB,IO_L09N_2/GCLK1,UNUSED,,2,,,,,,,,,
 P60,,DIFFSTB,IO_L10N_2/GCLK3,UNUSED,,2,,,,,,,,,
 P61,,,VCCO_2,,,2,,,,,any******,,,,

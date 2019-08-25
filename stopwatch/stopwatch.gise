@@ -82,6 +82,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1564828351" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1564828351">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1564828351" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="675770737248754204" xil_pn:start_ts="1564828351">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -107,7 +108,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1564849316" xil_pn:in_ck="4098348954869841043" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="6620811657063060850" xil_pn:start_ts="1564849300">
+    <transform xil_pn:end_ts="1566012296" xil_pn:in_ck="4098348954869841043" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-946807498741312642" xil_pn:start_ts="1566012275">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -125,11 +126,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1564848167" xil_pn:in_ck="6578114222110546020" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8119188189354790753" xil_pn:start_ts="1564848167">
+    <transform xil_pn:end_ts="1566011476" xil_pn:in_ck="6578114222110546020" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8119188189354790753" xil_pn:start_ts="1566011476">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1564849325" xil_pn:in_ck="-1024381656553700537" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8156907886779673426" xil_pn:start_ts="1564849316">
+    <transform xil_pn:end_ts="1566012307" xil_pn:in_ck="-1024381656553700537" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8156907886779673426" xil_pn:start_ts="1566012296">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -138,9 +139,11 @@
       <outfile xil_pn:name="stopwatch.ngd"/>
       <outfile xil_pn:name="stopwatch_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1564849332" xil_pn:in_ck="-1024381656553700536" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="6301418164239633844" xil_pn:start_ts="1564849325">
+    <transform xil_pn:end_ts="1566012315" xil_pn:in_ck="-1024381656553700536" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="6301418164239633844" xil_pn:start_ts="1566012307">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="stopwatch.pcf"/>
       <outfile xil_pn:name="stopwatch_map.map"/>
@@ -151,7 +154,7 @@
       <outfile xil_pn:name="stopwatch_summary.xml"/>
       <outfile xil_pn:name="stopwatch_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1564849348" xil_pn:in_ck="-6940801518068697503" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="4891759239423368658" xil_pn:start_ts="1564849332">
+    <transform xil_pn:end_ts="1566012330" xil_pn:in_ck="-6940801518068697503" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="4891759239423368658" xil_pn:start_ts="1566012315">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -165,7 +168,7 @@
       <outfile xil_pn:name="stopwatch_pad.txt"/>
       <outfile xil_pn:name="stopwatch_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1564849371" xil_pn:in_ck="-5068631231577774112" xil_pn:name="TRANEXT_bitFile_spartan3a" xil_pn:prop_ck="-4676327763442794107" xil_pn:start_ts="1564849359">
+    <transform xil_pn:end_ts="1566012356" xil_pn:in_ck="-5068631231577774112" xil_pn:name="TRANEXT_bitFile_spartan3a" xil_pn:prop_ck="1406129783654645690" xil_pn:start_ts="1566012343">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
@@ -178,7 +181,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1564849348" xil_pn:in_ck="-1024381656553700668" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1564849342">
+    <transform xil_pn:end_ts="1566012330" xil_pn:in_ck="-1024381656553700668" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1566012325">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
