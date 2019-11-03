@@ -1,0 +1,46 @@
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/BCD2bin/BCD2bin.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/BCD2bin/BCD2bin.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "BCD2bin.ngc" BCD2bin.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o BCD2bin_map.ncd BCD2bin.ngd BCD2bin.pcf 
+par -w -intstyle ise -ol high -t 1 BCD2bin_map.ncd BCD2bin.ncd BCD2bin.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml BCD2bin.twx BCD2bin.ncd -o BCD2bin.twr BCD2bin.pcf 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/BCD2bin/BCD2bin.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/BCD2bin/BCD2bin.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "BCD2bin.ngc" BCD2bin.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o BCD2bin_map.ncd BCD2bin.ngd BCD2bin.pcf 
+par -w -intstyle ise -ol high -t 1 BCD2bin_map.ncd BCD2bin.ncd BCD2bin.pcf 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/BCD2bin/BCD2bin.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/BCD2bin/BCD2bin.syr" 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/BCD2bin/BCD2bin.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/BCD2bin/BCD2bin.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "BCD2bin.ngc" BCD2bin.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o BCD2bin_map.ncd BCD2bin.ngd BCD2bin.pcf 
+par -w -intstyle ise -ol high -t 1 BCD2bin_map.ncd BCD2bin.ncd BCD2bin.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml BCD2bin.twx BCD2bin.ncd -o BCD2bin.twr BCD2bin.pcf 
+bitgen -intstyle ise -f BCD2bin.ut BCD2bin.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "BCD2bin.ngc" BCD2bin.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o BCD2bin_map.ncd BCD2bin.ngd BCD2bin.pcf 
+par -w -intstyle ise -ol high -t 1 BCD2bin_map.ncd BCD2bin.ncd BCD2bin.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml BCD2bin.twx BCD2bin.ncd -o BCD2bin.twr BCD2bin.pcf 
+bitgen -intstyle ise -f BCD2bin.ut BCD2bin.ncd 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/BCD2bin/BCD2bin.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/BCD2bin/BCD2bin.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s50a-tq144-5 "BCD2bin.ngc" BCD2bin.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o BCD2bin_map.ncd BCD2bin.ngd BCD2bin.pcf 
+par -w -intstyle ise -ol high -t 1 BCD2bin_map.ncd BCD2bin.ncd BCD2bin.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml BCD2bin.twx BCD2bin.ncd -o BCD2bin.twr BCD2bin.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f BCD2bin.ut BCD2bin.ncd 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/BCD2bin/BCD2bin.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/BCD2bin/BCD2bin.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s50a-tq144-5 "BCD2bin.ngc" BCD2bin.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o BCD2bin_map.ncd BCD2bin.ngd BCD2bin.pcf 
+par -w -intstyle ise -ol high -t 1 BCD2bin_map.ncd BCD2bin.ncd BCD2bin.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml BCD2bin.twx BCD2bin.ncd -o BCD2bin.twr BCD2bin.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f BCD2bin.ut BCD2bin.ncd 
+bitgen -intstyle ise -f BCD2bin.ut BCD2bin.ncd 
+bitgen -intstyle ise -f BCD2bin.ut BCD2bin.ncd 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/BCD2bin/BCD2bin.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/BCD2bin/BCD2bin.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s50a-tq144-5 "BCD2bin.ngc" BCD2bin.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o BCD2bin_map.ncd BCD2bin.ngd BCD2bin.pcf 
+par -w -intstyle ise -ol high -t 1 BCD2bin_map.ncd BCD2bin.ncd BCD2bin.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml BCD2bin.twx BCD2bin.ncd -o BCD2bin.twr BCD2bin.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f BCD2bin.ut BCD2bin.ncd 
+xst -intstyle ise -ifn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/BCD2bin/BCD2bin.xst" -ofn "C:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/BCD2bin/BCD2bin.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s50a-tq144-5 "BCD2bin.ngc" BCD2bin.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o BCD2bin_map.ncd BCD2bin.ngd BCD2bin.pcf 
+par -w -intstyle ise -ol high -t 1 BCD2bin_map.ncd BCD2bin.ncd BCD2bin.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml BCD2bin.twx BCD2bin.ncd -o BCD2bin.twr BCD2bin.pcf -ucf constraints.ucf 

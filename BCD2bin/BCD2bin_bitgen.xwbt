@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Personal\G Drive\Digtal System Design\Elbert V2\Codes\BCD2bin\BCD2bin.ncd
+OUTFILE=C:\Personal\G Drive\Digtal System Design\Elbert V2\Codes\BCD2bin\BCD2bin.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-5tq144
+WORKINGDIR=C:\Personal\G Drive\Digtal System Design\Elbert V2\Codes\BCD2bin
+LICENSE=WebPack
+USER_INFO=210970348_0_0_477

@@ -1,0 +1,25 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Sun Nov 03 12:42:40 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "P129" LEVEL 1;
+COMP "bin<0>" LOCATE = SITE "P55" LEVEL 1;
+COMP "bin<1>" LOCATE = SITE "P54" LEVEL 1;
+COMP "bin<2>" LOCATE = SITE "P51" LEVEL 1;
+COMP "bin<3>" LOCATE = SITE "P50" LEVEL 1;
+COMP "bin<4>" LOCATE = SITE "P49" LEVEL 1;
+COMP "bin<5>" LOCATE = SITE "P48" LEVEL 1;
+COMP "bin<6>" LOCATE = SITE "P47" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "P75" LEVEL 1;
+COMP "BCD<0>" LOCATE = SITE "P58" LEVEL 1;
+COMP "BCD<1>" LOCATE = SITE "P59" LEVEL 1;
+COMP "BCD<2>" LOCATE = SITE "P60" LEVEL 1;
+COMP "BCD<3>" LOCATE = SITE "P63" LEVEL 1;
+COMP "BCD<4>" LOCATE = SITE "P64" LEVEL 1;
+COMP "BCD<5>" LOCATE = SITE "P68" LEVEL 1;
+COMP "BCD<6>" LOCATE = SITE "P69" LEVEL 1;
+COMP "BCD<7>" LOCATE = SITE "P70" LEVEL 1;
+NET "clk_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+SCHEMATIC END;
+
