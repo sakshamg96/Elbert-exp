@@ -1,0 +1,40 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/vga_test/vga_tb_isim_beh.exe" -prj "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/vga_test/vga_tb_beh.prj" "work.vga_tb" "work.glbl" 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/vga_test/../vga_sync/vga_sync.v" into library work
+Analyzing Verilog file "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/vga_test/vga_test.v" into library work
+Analyzing Verilog file "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/vga_test/vga_tb.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/vga_test/clock_inst.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/vga_test/vga_test.v" Line 32: Port pixel_x is not connected to this instance
+Completed static elaboration
+Compiling module vga_sync
+Compiling module vga_test
+Compiling module vga_tb
+Compiling module glbl
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package textio
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling architecture bufg_v of entity BUFG [bufg_default]
+Compiling architecture ibufg_v of entity IBUFG [\IBUFG("DONT_CARE","0",true,"DEF...]
+Compiling architecture dcm_sp_clock_divide_by_2_v of entity dcm_sp_clock_divide_by_2 [dcm_sp_clock_divide_by_2_default]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_clock_lost_v of entity dcm_sp_clock_lost [dcm_sp_clock_lost_default]
+Compiling architecture dcm_sp_v of entity DCM_SP [\DCM_SP(true,"*",true,false,2.0,...]
+Compiling architecture behavioral of entity clock_inst [clock_inst_default]
+Time Resolution for simulation is 1ps.
+Waiting for 6 sub-compilation(s) to finish...
+Compiled 24 VHDL Units
+Compiled 4 Verilog Units
+Built simulation executable D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/vga_test/vga_tb_isim_beh.exe
+Fuse Memory Usage: 60948 KB
+Fuse CPU Usage: 1358 ms

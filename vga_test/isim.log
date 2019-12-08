@@ -1,0 +1,106 @@
+ISim log file
+Running: D:\Personal\G Drive\Digtal System Design\Elbert V2\Codes\vga_test\vga_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/vga_test/vga_tb_isim_beh.wdb 
+ISim P.28xd (signature 0xa0883be4)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 5 ns(2): Error:  Input Error : RST on DCM_SP  must be asserted for 3 CLKIN clock cycles. 
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 5 ns(2): Error:  Input Error : RST on DCM_SP  must be asserted for 3 CLKIN clock cycles. 
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 5 ns(2): Error:  Input Error : RST on DCM_SP  must be asserted for 3 CLKIN clock cycles. 
+ISim P.28xd (signature 0xa0883be4)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 5 ns(2): Error:  Input Error : RST on DCM_SP  must be asserted for 3 CLKIN clock cycles. 
+ISim P.28xd (signature 0xa0883be4)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.28xd (signature 0xa0883be4)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 5 ns(2): Error:  Input Error : RST on DCM_SP  must be asserted for 3 CLKIN clock cycles. 
+ISim P.28xd (signature 0xa0883be4)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.28xd (signature 0xa0883be4)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 10.00us
+Stopped at time : 2010 ns : File "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/vga_test/vga_tb.v" Line 54
+# restart
+# run 10.00us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 2010 ns : File "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/vga_test/vga_tb.v" Line 54
+# run 1.00us
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+Stopped at time : 2010 ns : File "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/vga_test/vga_tb.v" Line 54
+# restart
+# run 10.00us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 2010 ns : File "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/vga_test/vga_tb.v" Line 54
+ISim P.28xd (signature 0xa0883be4)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

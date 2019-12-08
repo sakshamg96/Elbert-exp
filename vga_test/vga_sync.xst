@@ -1,0 +1,5 @@
+set -tmpdir "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/vga_test/xst/projnav.tmp"
+set -xsthdpdir "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/vga_test/xst"
+elaborate
+-ifn vga_sync.prj
+-ifmt mixed

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/vga_test/vga_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vga_tb" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/vga_tb/hsync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">hsync</obj_property>
+      <obj_property name="ObjectShortName">hsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/vsync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">vsync</obj_property>
+      <obj_property name="ObjectShortName">vsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/rgb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rgb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rgb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/clk_12" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_12</obj_property>
+      <obj_property name="ObjectShortName">clk_12</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/rst_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/sw" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sw[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/uut/clock_inst_0/clkin_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkin_in</obj_property>
+      <obj_property name="ObjectShortName">clkin_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/uut/clock_inst_0/clkfx_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkfx_out</obj_property>
+      <obj_property name="ObjectShortName">clkfx_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/uut/clock_inst_0/clk0_buf" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk0_buf</obj_property>
+      <obj_property name="ObjectShortName">clk0_buf</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/uut/clock_inst_0/clk0_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk0_out</obj_property>
+      <obj_property name="ObjectShortName">clk0_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/uut/vga_sync_0/h_counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">h_counter[10:0]</obj_property>
+      <obj_property name="ObjectShortName">h_counter[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_tb/uut/vga_sync_0/v_counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">v_counter[10:0]</obj_property>
+      <obj_property name="ObjectShortName">v_counter[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

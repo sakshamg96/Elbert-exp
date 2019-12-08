@@ -1,0 +1,3 @@
+vhdl work "clock_inst.vhd"
+verilog work "../vga_sync/vga_sync.v"
+verilog work "vga_test.v"

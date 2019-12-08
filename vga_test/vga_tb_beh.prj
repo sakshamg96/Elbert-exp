@@ -1,0 +1,5 @@
+vhdl work "clock_inst.vhd"
+verilog work "../vga_sync/vga_sync.v"
+verilog work "vga_test.v"
+verilog work "vga_tb.v"
+verilog work "D:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v"

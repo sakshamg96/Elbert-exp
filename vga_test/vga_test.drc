@@ -1,0 +1,11 @@
+Release 14.2 Drc P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sun Dec 08 18:22:34 2019
+
+drc -z vga_test.ncd vga_test.pcf
+
+INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp clock_inst_0/DCM_SP_INST,
+   consult the device Interactive Data Sheet.
+DRC detected 0 errors and 0 warnings.
