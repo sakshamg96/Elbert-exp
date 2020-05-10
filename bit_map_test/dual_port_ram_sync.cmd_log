@@ -1,0 +1,46 @@
+xst -intstyle ise -ifn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.xst" -ofn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "dual_port_ram_sync.ngc" dual_port_ram_sync.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o dual_port_ram_sync_map.ncd dual_port_ram_sync.ngd dual_port_ram_sync.pcf 
+par -w -intstyle ise -ol high -t 1 dual_port_ram_sync_map.ncd dual_port_ram_sync.ncd dual_port_ram_sync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml dual_port_ram_sync.twx dual_port_ram_sync.ncd -o dual_port_ram_sync.twr dual_port_ram_sync.pcf 
+xst -intstyle ise -ifn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.xst" -ofn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "dual_port_ram_sync.ngc" dual_port_ram_sync.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o dual_port_ram_sync_map.ncd dual_port_ram_sync.ngd dual_port_ram_sync.pcf 
+par -w -intstyle ise -ol high -t 1 dual_port_ram_sync_map.ncd dual_port_ram_sync.ncd dual_port_ram_sync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml dual_port_ram_sync.twx dual_port_ram_sync.ncd -o dual_port_ram_sync.twr dual_port_ram_sync.pcf 
+xst -intstyle ise -ifn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.xst" -ofn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "dual_port_ram_sync.ngc" dual_port_ram_sync.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o dual_port_ram_sync_map.ncd dual_port_ram_sync.ngd dual_port_ram_sync.pcf 
+par -w -intstyle ise -ol high -t 1 dual_port_ram_sync_map.ncd dual_port_ram_sync.ncd dual_port_ram_sync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml dual_port_ram_sync.twx dual_port_ram_sync.ncd -o dual_port_ram_sync.twr dual_port_ram_sync.pcf 
+xst -intstyle ise -ifn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.xst" -ofn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "dual_port_ram_sync.ngc" dual_port_ram_sync.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o dual_port_ram_sync_map.ncd dual_port_ram_sync.ngd dual_port_ram_sync.pcf 
+par -w -intstyle ise -ol high -t 1 dual_port_ram_sync_map.ncd dual_port_ram_sync.ncd dual_port_ram_sync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml dual_port_ram_sync.twx dual_port_ram_sync.ncd -o dual_port_ram_sync.twr dual_port_ram_sync.pcf 
+xst -intstyle ise -ifn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.xst" -ofn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.syr" 
+xst -intstyle ise -ifn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.xst" -ofn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "dual_port_ram_sync.ngc" dual_port_ram_sync.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o dual_port_ram_sync_map.ncd dual_port_ram_sync.ngd dual_port_ram_sync.pcf 
+par -w -intstyle ise -ol high -t 1 dual_port_ram_sync_map.ncd dual_port_ram_sync.ncd dual_port_ram_sync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml dual_port_ram_sync.twx dual_port_ram_sync.ncd -o dual_port_ram_sync.twr dual_port_ram_sync.pcf 
+xst -intstyle ise -ifn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.xst" -ofn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.syr" 
+xst -intstyle ise -ifn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.xst" -ofn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "dual_port_ram_sync.ngc" dual_port_ram_sync.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o dual_port_ram_sync_map.ncd dual_port_ram_sync.ngd dual_port_ram_sync.pcf 
+par -w -intstyle ise -ol high -t 1 dual_port_ram_sync_map.ncd dual_port_ram_sync.ncd dual_port_ram_sync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml dual_port_ram_sync.twx dual_port_ram_sync.ncd -o dual_port_ram_sync.twr dual_port_ram_sync.pcf 
+xst -intstyle ise -ifn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.xst" -ofn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "dual_port_ram_sync.ngc" dual_port_ram_sync.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o dual_port_ram_sync_map.ncd dual_port_ram_sync.ngd dual_port_ram_sync.pcf 
+par -w -intstyle ise -ol high -t 1 dual_port_ram_sync_map.ncd dual_port_ram_sync.ncd dual_port_ram_sync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml dual_port_ram_sync.twx dual_port_ram_sync.ncd -o dual_port_ram_sync.twr dual_port_ram_sync.pcf 
+xst -intstyle ise -ifn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.xst" -ofn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "dual_port_ram_sync.ngc" dual_port_ram_sync.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o dual_port_ram_sync_map.ncd dual_port_ram_sync.ngd dual_port_ram_sync.pcf 
+par -w -intstyle ise -ol high -t 1 dual_port_ram_sync_map.ncd dual_port_ram_sync.ncd dual_port_ram_sync.pcf 
+xst -intstyle ise -ifn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.xst" -ofn "D:/Personal/G Drive/Digtal System Design/Elbert V2/Codes/dual_port_ram_sync/dual_port_ram_sync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-5 "dual_port_ram_sync.ngc" dual_port_ram_sync.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o dual_port_ram_sync_map.ncd dual_port_ram_sync.ngd dual_port_ram_sync.pcf 
+par -w -intstyle ise -ol high -t 1 dual_port_ram_sync_map.ncd dual_port_ram_sync.ncd dual_port_ram_sync.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml dual_port_ram_sync.twx dual_port_ram_sync.ncd -o dual_port_ram_sync.twr dual_port_ram_sync.pcf 
